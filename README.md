@@ -4,13 +4,17 @@
 
 쉬운 모니터링을 위하여 docker 기반의 서비스를 제공하므로, docker-compose 를 사용할 수 있는 준비가 먼저 필요합니다.
 
-docker-compose 설치문서 : https://docs.docker.com/compose/install/
-
+이미 설치되어 있다면 서비스 실행 으로 넘어가세요.
 ```
 $ sudo apt install docker.io
+$ sudo usermod -aG docker ${USER}
 $ sudo curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
 $ sudo chmod +x /usr/local/bin/docker-compose
 ```
+## 참고
+- Docker 설치문서 : https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04
+- docker-compose 설치문서 : https://docs.docker.com/compose/install/
+
 
 # 서비스 실행
 
