@@ -12,7 +12,7 @@ $ sudo curl -L https://github.com/docker/compose/releases/download/1.21.2/docker
 $ sudo chmod +x /usr/local/bin/docker-compose
 ```
 
-# How to
+# 서비스 실행
 
 이 저장소를 클론한 후에 아래의 명령을 실행하면 서비스가 구동됩니다.
 
@@ -26,7 +26,11 @@ $ docker-compose up -d
 - <http://localhost:3000>  grafana web page (login with admin/admin)
 
 
-grafana 로그인 후 Datasource 를 생성합니다. (influxdb dbname : collectd)
+# 대시보드 설정
+
+grafana 로그인 후 아래의 정보대로 Datasource 를 생성합니다. 
+- url : http://influxdb:8086
+- influxdb dbname : collectd
 
 마지막으로 대시보드 ID 6696 을 임포트합니다. 
 
