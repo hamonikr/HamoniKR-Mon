@@ -17,6 +17,7 @@ $ sudo apt install docker-compose
 - docker-compose 설치문서 : https://docs.docker.com/compose/install/
 
 
+
 # 서비스 실행
 
 이 저장소를 클론한 후에 아래의 명령을 실행하면 서비스가 구동됩니다.
@@ -27,8 +28,9 @@ $ docker-compose up -d
 
 서비스 구동 후 아래의 주소에서 확인하세요 :
 
-- <http://localhost:8083>  influxdb admin page
 - <http://localhost:3000>  grafana web page (login with admin/admin)
+
+
 
 
 # 대시보드 설정
@@ -40,4 +42,12 @@ grafana 로그인 후 아래의 정보대로 Datasource 를 생성합니다.
 마지막으로 대시보드 ID 6696 을 임포트합니다. 
 
 
+
+### Tip. 네트워크 디바이스가 eth0 이 아닌경우
+ifconfig 명령어로 확인하여 사용 중인 네트워크 디바이스명을 확인하고
+collected.conf 파일에서 <Plugin interface> 섹션의 interface 값을 수정하고 다시 시작하세요.
+
+
+
+# 버그 제출 및 기타 이슈 제안
 이 프로젝트와 관련하여 이슈는 상단의 이슈 탭을 이용해 주세요.
