@@ -23,7 +23,7 @@ $ sudo apt install docker-compose
 이 저장소를 클론한 후에 아래의 명령을 실행하면 서비스가 구동됩니다.
 
 ```
-$ docker-compose up -d
+$ sudo docker-compose up -d
 ```
 
 서비스 구동 후 아래의 주소에서 확인하세요 :
