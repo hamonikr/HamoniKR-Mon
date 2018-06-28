@@ -1,0 +1,45 @@
+version: '2'
+
+services:
+  collectd:
+    image: fr3nd/collectd
+    container_name: ivs-collectd
+    privileged: true
+    network_mode: host
+    volumes:
+      - /proc:/mnt/proc:ro
+      - ./collectd.conf:/etc/collectd/collectd.conf
+    labels:
+      com.invesume.description: "Collectd for HamoniKR"
+      com.invesume.department: "Server"
+      com.invesume.label-with-empty-value: ""
+
+  influxdb:
+    image: influxdb:latest
+    container_name: ivs-influxdb
+    ports:
+      - "8083:8083"
+      - "8086:8086"
+      - "25826:25826/udp"
+    volumes:
+      - /var/lib/influxdb
+      - ./influxdb.conf:/etc/influxdb/influxdb.conf
+      - ./types.db:/usr/share/collectd/types.db:ro
+    labels:
+      com.invesume.description: "InfluxDB for HamoniKR"
+      com.invesume.department: "Server"
+      com.invesume.label-with-empty-value: ""
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: ivs-grafana
+    ports:
+      - "3000:3000"
+    user: "104"
+    volumes:
+      - /var/lib/grafana
+      - ./grafana.ini:/etc/grafana/grafana.ini
+    labels:
+      com.invesume.description: "Grafana for HamoniKR"
+      com.invesume.department: "Server"
+      com.invesume.label-with-empty-value: ""
