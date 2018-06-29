@@ -2,7 +2,20 @@
 
 ## About
 
-하모니카 리눅스를 서버로 사용하는 경우 시스템 모니터링을 쉽게 할 수 있도록 제공합니다.
+하모니카 리눅스를 서버로 사용하는 경우 시스템 모니터링을 쉽게 할 수 있도록 제공하고 있습니다.
+기본으로 제공되는 대시보드에 모니터링을 원하는 항목을 사용자 정의 패널로 자유롭게 추가할 수 있습니다.
+
+
+### 지원되는 OS
+
+아래의 환경에서 테스트 되었으며, 기타 SystemV Linux 계열에서도 docker, docker-compose 가 있으면 동일하게 사용가능합니다.
+
+- HamoniKR 2.1
+- HamoniKR Community Edition Moordev MATE 64bit 1.0
+- Ubuntu 16.04
+- Ubuntu 18.04
+- Linux Mint 18
+- Linux Mint 19 beta
 
 ### Requirement
 쉬운 모니터링을 위하여 docker 기반의 서비스를 제공하므로, docker-compose 를 사용할 수 있는 준비가 먼저 필요합니다.
@@ -13,8 +26,9 @@ $ sudo apt install docker.io
 $ sudo usermod -aG docker ${USER}
 $ sudo apt install docker-compose
 ```
-#### 참고
-- Docker 설치문서 : https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04
+#### 기타 OS 에서 docker, docker-compose 설치는 아래 링크를 참고하세요.
+
+- Docker 설치문서 : https://docs.docker.com/install/
 - docker-compose 설치문서 : https://docs.docker.com/compose/install/
 
 
@@ -38,8 +52,6 @@ grafana 로그인 후 아래의 정보대로 Datasource 를 생성합니다.
 - influxdb dbname : collectd
 
 마지막으로 대시보드 ID 6696 을 임포트합니다. 
-
-
 
 ### Tip. 네트워크 디바이스가 eth0 이 아닌경우
 ifconfig 명령어로 확인하여 사용 중인 네트워크 디바이스명을 확인하고
