@@ -37,6 +37,8 @@ $ sudo apt install docker-compose
 이 저장소를 클론한 후에 아래의 명령을 실행하면 서비스가 구동됩니다.
 
 ```
+$ git clone https://github.com/ivsteam/HamoniKR-Mon.git
+$ cd HamoniKR-Mon
 $ sudo docker-compose up -d
 ```
 
