@@ -1,4 +1,4 @@
-![Memory](https://github.com/ivsteam/hamonia-mon/blob/master/imgs/grafana.png)
+![Dashboard](https://github.com/ivsteam/ivsteam.github.io/blob/master/img/grafana_6696.png)
 
 ## About
 
