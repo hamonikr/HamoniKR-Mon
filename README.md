@@ -53,7 +53,7 @@ grafana 로그인 후 아래의 정보대로 Datasource 를 생성합니다.
 - url : http://influxdb:8086
 - influxdb dbname : collectd
 
-![Add Data Source](https://github.com/ivsteam/ivsteam.github.io/blob/master/img/grafana_6696.png)
+![Add Data Source](https://github.com/ivsteam/ivsteam.github.io/blob/master/img/add_data_source.png)
 
 마지막으로 대시보드 ID 6696 을 임포트합니다. 
 
