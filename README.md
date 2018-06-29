@@ -49,13 +49,21 @@ $ sudo docker-compose up -d
 
 ## 대시보드 설정
 
-grafana 로그인 후 아래의 정보대로 Datasource 를 생성합니다. 
+1) grafana 로그인 후 아래의 정보대로 Datasource 를 생성합니다. 
 - url : http://influxdb:8086
 - influxdb dbname : collectd
 
 ![Add Data Source](https://github.com/ivsteam/ivsteam.github.io/blob/master/img/add_data_source.png)
 
-마지막으로 대시보드 ID 6696 을 임포트합니다. 
+
+2) 왼쪽화면의 + 버튼을 누르고 Import 메뉴를 클릭하여 대시보드 ID 6696 을 다음과 같이 임포트합니다. 
+
+![Import](https://github.com/ivsteam/ivsteam.github.io/blob/master/img/dashboard_import.png)
+
+이전 단계에서 생성한 Datasource 이름 influxdb 를 다음과 같이 선택해줍니다.
+
+![Select DS](https://github.com/ivsteam/ivsteam.github.io/blob/master/img/select_ds.png)
+
 
 ### Tip. 네트워크 디바이스가 eth0 이 아닌경우
 ifconfig 명령어로 확인하여 사용 중인 네트워크 디바이스명을 확인하고
