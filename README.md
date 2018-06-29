@@ -53,7 +53,7 @@ $ sudo docker-compose up -d
 ![Add Data Source](https://github.com/ivsteam/ivsteam.github.io/blob/master/img/add_data_source.png)
 
 
-2) 왼쪽화면의 + 버튼을 누르고 Import 메뉴를 클릭하여 대시보드 ID 6696 을 다음과 같이 임포트합니다. 
+2) 왼쪽화면의 + 버튼을 누르고 Import 메뉴를 클릭하여 대시보드 ID 6696 을 입력하고 다음과 같이 Load 버튼을 클릭합니다. 
 
 ![Import](https://github.com/ivsteam/ivsteam.github.io/blob/master/img/dashboard_import.png)
 
