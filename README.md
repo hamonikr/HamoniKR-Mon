@@ -68,4 +68,4 @@ collected.conf 파일에서 <Plugin interface> 섹션의 interface 값을 수정
 
 
 ## 버그 제출 및 기타 이슈 제안
-이 프로젝트와 관련하여 이슈는 상단의 이슈 탭을 이용해 주세요.
+이 프로젝트와 관련하여 이슈는 [상단의 이슈 탭](https://github.com/ivsteam/HamoniKR-Mon/issues)을 이용해 주세요.
