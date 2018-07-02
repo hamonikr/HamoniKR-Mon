@@ -19,9 +19,8 @@
 이미 설치되어 있다면 서비스 실행 으로 넘어가세요.
 아래는 우분투 계열에서 docker, docker-compose 의 설치방법입니다.
 ```
-$ sudo apt install docker.io
+$ sudo apt install -y docker.io docker-compose
 $ sudo usermod -aG docker ${USER}
-$ sudo apt install docker-compose
 ```
 #### 기타 OS 에서 docker, docker-compose 설치는 아래 링크를 참고하세요.
 
