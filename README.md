@@ -69,3 +69,24 @@ collected.conf 파일에서 <Plugin interface> 섹션의 interface 값을 수정
 
 ## 버그 제출 및 기타 이슈 제안
 이 프로젝트와 관련하여 이슈는 [상단의 이슈 탭](https://github.com/ivsteam/HamoniKR-Mon/issues)을 이용해 주세요.
+
+
+## Contributing
+
+Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+
+## Versioning
+
+For the versions available, see the [tags on this repository](https://github.com/ivsteam/HamoniKR-Mon/tags). 
+
+## Authors
+
+* **Kevin Kim** - *Initial work*
+
+See also the list of [contributors](https://github.com/ivsteam/HamoniKR-Mon/contributors) who participated in this project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+
