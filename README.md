@@ -9,10 +9,8 @@
 
 - HamoniKR 2.1
 - HamoniKR Community Edition Moordev MATE 64bit 1.0
-- Ubuntu 16.04
-- Ubuntu 18.04
-- Linux Mint 18
-- Linux Mint 19
+- Ubuntu 16.04, 18.04
+- Linux Mint 18, 19
 
 ### Requirement
 쉬운 모니터링을 위하여 docker 기반의 서비스를 제공하므로, docker-compose 를 사용할 수 있는 준비가 먼저 필요합니다.
