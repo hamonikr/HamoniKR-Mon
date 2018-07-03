@@ -28,7 +28,19 @@ $ sudo usermod -aG docker ${USER}
 - docker-compose 설치문서 : https://docs.docker.com/compose/install/
 
 
-## 서비스 실행
+## 사용법
+
+### 데이터를 저장할 디렉토리 생성
+
+서비스 재 구동시에도 데이터가 보관될 수 있도록 영구적으로 저장할 디렉토리를 생성해 줍니다.
+
+```
+$ sudo mkdir -p /var/hamonikr-mon-data/influxdb
+$ sudo mkdir -p /var/hamonikr-mon-data/grafana
+$ sudo chown 472:472 /var/hamonikr-mon-data/grafana
+```
+
+### 서비스 실행
 
 이 저장소를 클론한 후에 아래의 명령을 실행하면 서비스가 구동됩니다.
 
@@ -37,11 +49,17 @@ $ git clone https://github.com/ivsteam/HamoniKR-Mon.git
 $ cd HamoniKR-Mon
 $ sudo docker-compose up -d
 ```
-
 서비스 구동 후 아래의 주소에서 확인하세요 :
 
 - <http://localhost:3000>  grafana web page (login with admin/admin)
 
+### 서비스 중지
+
+구동중인 서비스를 중지하려면 아래의 명령을 이용하세요.
+
+```
+$ sudo dokcer-compose down
+```
 
 ## 대시보드 설정
 
@@ -66,10 +84,8 @@ ifconfig 명령어로 확인하여 사용 중인 네트워크 디바이스명을
 collected.conf 파일에서 <Plugin interface> 섹션의 interface 값을 수정하고 다시 시작하세요.
 
 
-
 ## 버그 제출 및 기타 이슈 제안
 이 프로젝트와 관련하여 이슈는 [상단의 이슈 탭](https://github.com/ivsteam/HamoniKR-Mon/issues)을 이용해 주세요.
-
 
 ## Contributing
 
@@ -88,5 +104,3 @@ See also the list of [contributors](https://github.com/ivsteam/HamoniKR-Mon/cont
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
-
-
