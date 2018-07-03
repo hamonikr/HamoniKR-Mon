@@ -12,7 +12,7 @@
 - Ubuntu 16.04
 - Ubuntu 18.04
 - Linux Mint 18
-- Linux Mint 19 beta
+- Linux Mint 19
 
 ### Requirement
 쉬운 모니터링을 위하여 docker 기반의 서비스를 제공하므로, docker-compose 를 사용할 수 있는 준비가 먼저 필요합니다.
@@ -68,4 +68,25 @@ collected.conf 파일에서 <Plugin interface> 섹션의 interface 값을 수정
 
 
 ## 버그 제출 및 기타 이슈 제안
-이 프로젝트와 관련하여 이슈는 상단의 이슈 탭을 이용해 주세요.
+이 프로젝트와 관련하여 이슈는 [상단의 이슈 탭](https://github.com/ivsteam/HamoniKR-Mon/issues)을 이용해 주세요.
+
+
+## Contributing
+
+Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+
+## Versioning
+
+For the versions available, see the [tags on this repository](https://github.com/ivsteam/HamoniKR-Mon/tags). 
+
+## Authors
+
+* **Kevin Kim** - *Initial work*
+
+See also the list of [contributors](https://github.com/ivsteam/HamoniKR-Mon/contributors) who participated in this project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+
+
