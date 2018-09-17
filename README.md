@@ -1,4 +1,5 @@
 ![Dashboard](https://github.com/ivsteam/ivsteam.github.io/blob/master/img/grafana_6696.png)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fivsteam%2FHamoniKR-Mon.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fivsteam%2FHamoniKR-Mon?ref=badge_shield)
 
 ## About
 
@@ -83,6 +84,11 @@ collected.conf 파일에서 <Plugin interface> 섹션의 interface 값을 수정
 
 
 ## 버그 제출 및 기타 이슈 제안
+
+이 프로젝트와 관련하여 이슈는 상단의 이슈 탭을 이용해 주세요.
+
+## License
+
 이 프로젝트와 관련하여 이슈는 [상단의 이슈 탭](https://github.com/ivsteam/HamoniKR-Mon/issues)을 이용해 주세요.
 
 ## Contributing
@@ -102,3 +108,4 @@ See also the list of [contributors](https://github.com/ivsteam/HamoniKR-Mon/cont
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+
