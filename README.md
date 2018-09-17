@@ -56,7 +56,7 @@ $ sudo docker-compose up -d
 구동중인 서비스를 중지하려면 아래의 명령을 이용하세요.
 
 ```
-$ sudo dokcer-compose down
+$ sudo docker-compose down
 ```
 
 ## 대시보드 설정
