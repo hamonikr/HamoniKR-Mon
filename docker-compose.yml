@@ -21,7 +21,9 @@ services:
       - "8086:8086"
       - "25826:25826/udp"
     volumes:
-      - /var/lib/influxdb
+      # Data 를 저장할 로컬 디렉토리를 위해 아래와 같이 디렉토리 생성
+      # sudo mkdir -p /var/hamonikr-mon-data/influxdb
+      - /var/hamonikr-mon-data/influxdb:/var/lib/influxdb
       - ./influxdb.conf:/etc/influxdb/influxdb.conf
       - ./types.db:/usr/share/collectd/types.db:ro
     labels:
@@ -34,9 +36,12 @@ services:
     container_name: ivs-grafana
     ports:
       - "3000:3000"
-    user: "104"
+    user: "472"
     volumes:
-      - /var/lib/grafana
+      # Data 를 저장할 로컬 디렉토리를 위해 아래와 같이 생성 후 소유권을 변경
+      # sudo mkdir -p /var/hamonikr-mon-data/grafana
+      # sudo chown 472:472 /var/hamonikr-mon-data/grafana
+      - /var/hamonikr-mon-data/grafana:/var/lib/grafana
       - ./grafana.ini:/etc/grafana/grafana.ini
     labels:
       com.invesume.description: "Grafana for HamoniKR"

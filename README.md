@@ -10,10 +10,8 @@
 
 - HamoniKR 2.1
 - HamoniKR Community Edition Moordev MATE 64bit 1.0
-- Ubuntu 16.04
-- Ubuntu 18.04
-- Linux Mint 18
-- Linux Mint 19 beta
+- Ubuntu 16.04, 18.04
+- Linux Mint 18, 19
 
 ### Requirement
 쉬운 모니터링을 위하여 docker 기반의 서비스를 제공하므로, docker-compose 를 사용할 수 있는 준비가 먼저 필요합니다.
@@ -29,7 +27,19 @@ $ sudo usermod -aG docker ${USER}
 - docker-compose 설치문서 : https://docs.docker.com/compose/install/
 
 
-## 서비스 실행
+## 사용법
+
+### 데이터를 저장할 디렉토리 생성
+
+서비스 재 구동시에도 데이터가 보관될 수 있도록 영구적으로 저장할 디렉토리를 생성해 줍니다.
+
+```
+$ sudo mkdir -p /var/hamonikr-mon-data/influxdb
+$ sudo mkdir -p /var/hamonikr-mon-data/grafana
+$ sudo chown 472:472 /var/hamonikr-mon-data/grafana
+```
+
+### 서비스 실행
 
 이 저장소를 클론한 후에 아래의 명령을 실행하면 서비스가 구동됩니다.
 
@@ -38,11 +48,17 @@ $ git clone https://github.com/ivsteam/HamoniKR-Mon.git
 $ cd HamoniKR-Mon
 $ sudo docker-compose up -d
 ```
-
 서비스 구동 후 아래의 주소에서 확인하세요 :
 
 - <http://localhost:3000>  grafana web page (login with admin/admin)
 
+### 서비스 중지
+
+구동중인 서비스를 중지하려면 아래의 명령을 이용하세요.
+
+```
+$ sudo docker-compose down
+```
 
 ## 대시보드 설정
 
@@ -67,10 +83,29 @@ ifconfig 명령어로 확인하여 사용 중인 네트워크 디바이스명을
 collected.conf 파일에서 <Plugin interface> 섹션의 interface 값을 수정하고 다시 시작하세요.
 
 
-
 ## 버그 제출 및 기타 이슈 제안
+
 이 프로젝트와 관련하여 이슈는 상단의 이슈 탭을 이용해 주세요.
 
+## License
+
+이 프로젝트와 관련하여 이슈는 [상단의 이슈 탭](https://github.com/ivsteam/HamoniKR-Mon/issues)을 이용해 주세요.
+
+## Contributing
+
+Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+
+## Versioning
+
+For the versions available, see the [tags on this repository](https://github.com/ivsteam/HamoniKR-Mon/tags). 
+
+## Authors
+
+* **Kevin Kim** - *Initial work*
+
+See also the list of [contributors](https://github.com/ivsteam/HamoniKR-Mon/contributors) who participated in this project.
 
 ## License
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fivsteam%2FHamoniKR-Mon.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fivsteam%2FHamoniKR-Mon?ref=badge_large)
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+
