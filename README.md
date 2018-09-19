@@ -83,6 +83,9 @@ ifconfig 명령어로 확인하여 사용 중인 네트워크 디바이스명을
 collected.conf 파일에서 <Plugin interface> 섹션의 interface 값을 수정하고 다시 시작하세요.
 
 
+### 다수의 서버를 한곳에서 모니터링 하고 싶은 경우
+https://github.com/ivsteam/HamoniKR-Mon/wiki/Configuration-as-a-Central-Monitoring-Server-for-Clients
+
 ## 버그 제출 및 기타 이슈 제안
 
 이 프로젝트와 관련하여 이슈는 상단의 이슈 탭을 이용해 주세요.
