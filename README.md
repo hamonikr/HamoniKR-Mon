@@ -73,6 +73,10 @@ $ sudo docker-compose down
 
 ![Import](https://github.com/ivsteam/ivsteam.github.io/blob/master/img/dashboard_import.png)
 
+### Tip. 정상적으로 대시보드를 로드할 수 없는 경우
+1. https://grafana.com/dashboards/6696 에서 Download JSON 을 클릭하여 JSON 파일을 다운받습니다.
+2. Import 페이지에서 'Upload .json File' 을 통해 올립니다.
+
 이전 단계에서 생성한 Datasource 이름 influxdb 를 다음과 같이 선택해줍니다.
 
 ![Select DS](https://github.com/ivsteam/ivsteam.github.io/blob/master/img/select_ds.png)
