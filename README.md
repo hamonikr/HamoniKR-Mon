@@ -92,7 +92,7 @@ https://github.com/ivsteam/HamoniKR-Mon/wiki/Configuration-as-a-Central-Monitori
 
 ## 알림설정
 1. grafana.ini 설정 변경 - gmail smtp 예시
-'''
+```
 [smtp]
 enabled = true
 host = smtp.gmail.com:587
@@ -106,7 +106,7 @@ from_address = 발송메일주소
 from_name = Grafana
 # EHLO identity in SMTP dialog (defaults to instance_name)
 ;ehlo_identity = dashboard.example.com
-'''
+```
 
 
 ## 버그 제출 및 기타 이슈 제안
