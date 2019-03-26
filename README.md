@@ -90,6 +90,25 @@ collected.conf 파일에서 <Plugin interface> 섹션의 interface 값을 수정
 ### 다수의 서버를 한곳에서 모니터링 하고 싶은 경우
 https://github.com/ivsteam/HamoniKR-Mon/wiki/Configuration-as-a-Central-Monitoring-Server-for-Clients
 
+## 알림설정
+1. grafana.ini 설정 변경 - gmail smtp 예시
+```
+[smtp]
+enabled = true
+host = smtp.gmail.com:587
+user = 메일주소@gmail.com
+# If the password contains # or ; you have to wrap it with trippel quotes. Ex """#password;"""
+password = """비밀번호"""
+;cert_file =
+;key_file =
+;skip_verify = false
+from_address = 발송메일주소
+from_name = Grafana
+# EHLO identity in SMTP dialog (defaults to instance_name)
+;ehlo_identity = dashboard.example.com
+```
+
+
 ## 버그 제출 및 기타 이슈 제안
 
 이 프로젝트와 관련하여 이슈는 상단의 이슈 탭을 이용해 주세요.
